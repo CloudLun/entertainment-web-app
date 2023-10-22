@@ -16,16 +16,16 @@ const Trending = () => {
     }
 
     return (
-        <div className=''>
-            <h2 className='mb-[16px] pl-[16px] font-regular text-heading_small text-white'>Trending</h2>
-            <div className='flex items-center gap-[16px] pl-[16px] overflow-x-scroll'>
+        <div className='mb-[24px] md:mb-[40px] pl-[16px] md:px-0 lg:w-[calc(100vw-200px)]'>
+            <h2 className='mb-[16px] font-regular text-heading_small text-white'>Trending</h2>
+            <div className='flex items-center gap-[16px] w-full overflow-x-scroll'>
                 {data.filter((d, i) => i <= 4).map((d, i) => {
                     return (
                         <div key={i} className='relative min-w-[240px] md:min-w-[470px] h-[140px] md:h-[230px] bg-white rounded-[8px]'>
                             <Image
                                 src={d.thumbnail.trending!.large}
                                 fill={true}
-                                alt="logo"
+                                alt="trending image"
                                 className='rounded-[8px]'
                             />
                             <div className='absolute left-[18px] bottom-[20px] z-20'>

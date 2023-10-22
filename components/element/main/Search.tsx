@@ -14,7 +14,7 @@ const Search = () => {
 
 
     return (
-        <form className='flex items-center gap-[24px] my-[24px] md:my-[36px] lg:my-[30px] px-[16px] h-[24px] md:h-[32px]'>
+        <form className='flex items-center gap-[24px] my-[24px] md:my-[36px] lg:my-[30px] px-[16px] md:px-0 h-[24px] md:h-[32px]'>
             <Image
                 src="/assets/icon-search.svg"
                 width={24}

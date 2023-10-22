@@ -10,7 +10,7 @@ const Nav = () => {
     const { windowWidth } = useContext(WindowSizeContext) as WindowSizeContextType
 
     return (
-        <div className='relative flex lg:flex-col justify-between items-center px-[16px] py-[18px] lg:p-[30px] w-full lg:w-[96px] h-[56px] lg:h-full md:h-[72px] bg-semi_dark_blue rounded-[10px]'>
+        <div className='relative flex lg:flex-col justify-between items-center px-[16px] py-[18px] lg:p-[30px] w-full lg:w-[96px] h-[56px] lg:h-full md:h-[72px] bg-semi_dark_blue md:rounded-[10px]'>
             <div>
                 <Image
                     src="/assets/logo.svg"

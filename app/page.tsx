@@ -8,7 +8,7 @@ import { WindowSizeProvider } from "../context/WindowSizeContext"
 
 export default function Home() {
   return (
-    <div className='lg:flex lg:gap-[36px] md:p-[25px] lg:p-[32px] w-[100vw]  h-[100vh] bg-dark_blue'>
+    <div className='lg:flex lg:gap-[36px] md:p-[25px] lg:p-[32px] max-w-[100vw] max-h-[100vh] bg-dark_blue'>
       <WindowSizeProvider>
         <Nav />
         <Main />

@@ -18,6 +18,7 @@ const config: Config = {
         heading_large: "32px",
         heading_medium: "24px",
         heading_small: "20px",
+        heading_xsmall:"18px",
         body_medium: "15px",
         body_small: "13px",
       },

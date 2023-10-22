@@ -14,8 +14,8 @@ const Nav = () => {
             <div>
                 <Image
                     src="/assets/logo.svg"
-                    width={windowWidth > 768 ? 32 : 25}
-                    height={windowWidth > 768 ? 25.6 : 20}
+                    width={windowWidth > 767 ? 32 : 25}
+                    height={windowWidth > 767 ? 25.6 : 20}
                     alt="logo"
                     className='cursor-pointer'
                 />
@@ -53,8 +53,8 @@ const Nav = () => {
             <div>
                 <Image
                     src="/assets/image-avatar.png"
-                    width={windowWidth > 768 ? 40 : 24}
-                    height={windowWidth > 768 ? 40 : 24}
+                    width={windowWidth > 767 ? 40 : 24}
+                    height={windowWidth > 767 ? 40 : 24}
                     alt="logo"
                     className='cursor-pointer'
                 />

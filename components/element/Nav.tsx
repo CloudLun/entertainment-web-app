@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { WindowSizeContext } from '@/context/WindowSizeContext'
 
 const Nav = () => {
-
+    const router = useRouter()
     const { windowWidth } = useContext(WindowSizeContext) as WindowSizeContextType
     const [categoryChecked, setCategoryChecked] = useState({
         home: false,
@@ -19,8 +19,8 @@ const Nav = () => {
     const pageCheckHandler = (e: Category) => {
         const newCategoryChecked = { ...categoryChecked }
         Object.keys(categoryChecked).forEach((c) => c === e ? newCategoryChecked[c] = true : newCategoryChecked[(c) as Category] = false)
-        
         setCategoryChecked(newCategoryChecked)
+        e === "home" ? router.push("/") : router.push(e)
     }
 
     return (

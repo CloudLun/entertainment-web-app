@@ -1,13 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { WindowSizeContext } from '@/context/WindowSizeContext'
+"use client"
+import React, { useState} from 'react'
 
-import data from "../../../data/data.json"
+import data from "../../data/data.json"
 import Image from 'next/image'
 
 
 const Recommend = () => {
-
-    const { windowWidth } = useContext(WindowSizeContext) as WindowSizeContextType
 
     const [bookmarked, SetBookmarked] = useState(data.filter((d, i) => i > 4).map(d => false))
 
@@ -25,7 +23,7 @@ const Recommend = () => {
                     data.filter((d, i) => i > 4).map((d, i) => {
                         return (
                             <div key={i} className='relative rounded-[8px]'>
-                                <div className='w-[164px] md:w-[220px] h-[110px] md:h-[140px] lg:h-[184px]'>
+                                <div className='w-[164px] md:w-[220px] h-[110px] md:h-[140px] lg:h-[184px] xl-h[228px]'>
                                     <Image
                                         src={d.thumbnail.regular.large}
                                         fill

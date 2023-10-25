@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
-import data from "../../../data/data.json"
+import data from "../../data/data.json"
 import Image from 'next/image'
 
 

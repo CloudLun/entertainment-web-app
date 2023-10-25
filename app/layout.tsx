@@ -2,6 +2,10 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+import Nav from '@/components/element/Nav'
+
+import { WindowSizeProvider } from "../context/WindowSizeContext"
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className='lg:flex lg:gap-[36px] md:p-[25px] lg:p-[32px] max-w-[100vw] h-[100vh] bg-dark_blue'>
+          <WindowSizeProvider>
+            <Nav />
+            {children}
+          </WindowSizeProvider>
+        </div>
+      </body>
     </html>
   )
 }
